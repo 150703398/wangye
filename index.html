@@ -1,55 +1,294 @@
-<!-- ================== 可持续发展 ================== -->
-<section class="section">
-  <h2 data-i18n="sustain_title">可持续发展行动</h2>
-  <p data-i18n="sustain_desc">
-    可持续发展不仅是减少破坏，更是建立人与自然长期共生的系统。
-    我们关注能源、城市、产业与个人行为的系统性改变，推动低碳、透明、可复制的环保实践。
-  </p>
-  <ul class="list">
-    <li data-i18n="sustain_1">推广清洁能源与能源效率提升</li>
-    <li data-i18n="sustain_2">支持低碳城市与绿色建筑</li>
-    <li data-i18n="sustain_3">倡导企业 ESG 与环境责任</li>
-  </ul>
-</section>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>绿色未来 · 环保行动官网</title>
 
-<!-- ================== 循环经济 ================== -->
-<section class="section alt">
-  <h2 data-i18n="recycle_title">循环经济与资源再生</h2>
-  <p data-i18n="recycle_desc">
-    循环经济的核心不是“回收”，而是从设计阶段就减少浪费。
-    通过材料再生、产品延寿和共享机制，让资源在系统中持续流动。
-  </p>
-  <ul class="list">
-    <li data-i18n="recycle_1">减少一次性塑料与不可降解材料</li>
-    <li data-i18n="recycle_2">推动电子废弃物规范回收</li>
-    <li data-i18n="recycle_3">支持再生材料与可持续包装</li>
-  </ul>
-</section>
+  <!-- SEO -->
+  <meta name="description" content="推动可持续发展、循环经济与生物多样性保护的环保行动官网。" />
+  <meta name="keywords" content="环保, 可持续发展, 循环经济, 生物多样性, 低碳, ESG" />
 
-<!-- ================== 生物多样性 ================== -->
-<section class="section">
-  <h2 data-i18n="bio_title">生物多样性保护</h2>
-  <p data-i18n="bio_desc">
-    生物多样性是地球生命系统稳定的基础。
-    保护森林、湿地、海洋与野生动物，就是在保护人类自身的未来。
-  </p>
-  <ul class="list">
-    <li data-i18n="bio_1">反对非法捕猎与栖息地破坏</li>
-    <li data-i18n="bio_2">支持自然保护区与生态修复</li>
-    <li data-i18n="bio_3">倡导与自然共存的生活方式</li>
-  </ul>
-</section>
+  <!-- Open Graph -->
+  <meta property="og:title" content="绿色未来 · 环保行动" />
+  <meta property="og:description" content="为地球、为未来，推动可持续的环保行动。" />
+  <meta property="og:type" content="website" />
 
-<!-- ================== 行动号召 ================== -->
-<section class="section alt">
-  <h2 data-i18n="action_title">我们能做什么</h2>
-  <p data-i18n="action_desc">
-    环保不是少数人的使命，而是每个人都能参与的日常选择。
-    从今天开始，用行动推动改变。
+  <style>
+    :root {
+      --green: #2e7d32;
+      --light: #f5f9f6;
+      --dark: #1b1b1b;
+      --gray: #555;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
+      color: var(--dark);
+      background: #fff;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(120deg, #2e7d32, #4caf50);
+      color: #fff;
+      padding: 80px 20px 60px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      max-width: 720px;
+      margin: 0 auto;
+      opacity: 0.95;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav button {
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 20px;
+      cursor: pointer;
+      margin: 0 4px;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .section {
+      margin-bottom: 80px;
+    }
+
+    .section.alt {
+      background: var(--light);
+      padding: 60px 40px;
+      border-radius: 20px;
+    }
+
+    .section h2 {
+      color: var(--green);
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+
+    .section p {
+      max-width: 820px;
+      color: var(--gray);
+    }
+
+    .list {
+      margin-top: 20px;
+      padding-left: 20px;
+    }
+
+    .list li {
+      margin-bottom: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      background: #0f2a18;
+      color: #c8e6c9;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.1rem;
+      }
+      .section.alt {
+        padding: 40px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1 data-i18n="hero_title">绿色未来，从行动开始</h1>
+  <p data-i18n="hero_desc">
+    我们致力于推动可持续发展、循环经济与生物多样性保护，
+    用真实行动守护地球的未来。
   </p>
-  <ul class="list">
-    <li data-i18n="action_1">选择节能产品与公共交通</li>
-    <li data-i18n="action_2">减少浪费，重复使用与回收</li>
-    <li data-i18n="action_3">支持环保组织与公益项目</li>
-  </ul>
-</section>
+
+  <nav>
+    <button onclick="setLang('zh')">中文</button>
+    <button onclick="setLang('en')">English</button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- 原有图片区 / 视觉区（你原来的图片仍然可以放在这里） -->
+  <section class="section">
+    <h2 data-i18n="vision_title">我们的愿景</h2>
+    <p data-i18n="vision_desc">
+      一个低碳、健康、人与自然和谐共生的世界。
+      环保不是牺牲发展，而是选择更聪明的未来。
+    </p>
+  </section>
+
+  <!-- 可持续发展 -->
+  <section class="section alt">
+    <h2 data-i18n="sustain_title">可持续发展行动</h2>
+    <p data-i18n="sustain_desc">
+      可持续发展意味着在满足当代需求的同时，
+      不损害后代满足其需求的能力。
+    </p>
+    <ul class="list">
+      <li data-i18n="sustain_1">清洁能源与能源效率提升</li>
+      <li data-i18n="sustain_2">绿色城市与低碳基础设施</li>
+      <li data-i18n="sustain_3">企业 ESG 与环境责任</li>
+    </ul>
+  </section>
+
+  <!-- 循环经济 -->
+  <section class="section">
+    <h2 data-i18n="recycle_title">循环经济与资源再生</h2>
+    <p data-i18n="recycle_desc">
+      从“用完即弃”到“循环再生”，
+      重新设计我们的生产与消费方式。
+    </p>
+    <div class="grid">
+      <div class="card" data-i18n="recycle_1">减少一次性塑料</div>
+      <div class="card" data-i18n="recycle_2">电子废弃物回收</div>
+      <div class="card" data-i18n="recycle_3">可持续包装材料</div>
+    </div>
+  </section>
+
+  <!-- 生物多样性 -->
+  <section class="section alt">
+    <h2 data-i18n="bio_title">生物多样性保护</h2>
+    <p data-i18n="bio_desc">
+      生物多样性是生态系统稳定与人类生存的基础。
+    </p>
+    <ul class="list">
+      <li data-i18n="bio_1">保护森林、湿地与海洋</li>
+      <li data-i18n="bio_2">反对非法捕猎与栖息地破坏</li>
+      <li data-i18n="bio_3">支持生态修复与自然保护区</li>
+    </ul>
+  </section>
+
+  <!-- 行动 -->
+  <section class="section">
+    <h2 data-i18n="action_title">你可以参与的行动</h2>
+    <p data-i18n="action_desc">
+      环保不只是口号，而是每天的选择。
+    </p>
+    <ul class="list">
+      <li data-i18n="action_1">节能出行与低碳生活</li>
+      <li data-i18n="action_2">减少浪费，重复使用</li>
+      <li data-i18n="action_3">支持环保项目与公益组织</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  © 2025 Green Future · Environmental Action
+</footer>
+
+<script>
+  const i18n = {
+    zh: {
+      hero_title: "绿色未来，从行动开始",
+      hero_desc: "我们致力于推动可持续发展、循环经济与生物多样性保护，用真实行动守护地球的未来。",
+      vision_title: "我们的愿景",
+      vision_desc: "一个低碳、健康、人与自然和谐共生的世界。",
+      sustain_title: "可持续发展行动",
+      sustain_desc: "在满足当代需求的同时，不损害后代的发展能力。",
+      sustain_1: "清洁能源与能源效率提升",
+      sustain_2: "绿色城市与低碳基础设施",
+      sustain_3: "企业 ESG 与环境责任",
+      recycle_title: "循环经济与资源再生",
+      recycle_desc: "重新设计生产与消费方式，让资源持续流动。",
+      recycle_1: "减少一次性塑料",
+      recycle_2: "电子废弃物回收",
+      recycle_3: "可持续包装材料",
+      bio_title: "生物多样性保护",
+      bio_desc: "保护生态系统，就是保护人类自身。",
+      bio_1: "保护森林、湿地与海洋",
+      bio_2: "反对非法捕猎",
+      bio_3: "支持生态修复",
+      action_title: "你可以参与的行动",
+      action_desc: "环保从日常选择开始。",
+      action_1: "节能出行与低碳生活",
+      action_2: "减少浪费",
+      action_3: "支持环保项目"
+    },
+    en: {
+      hero_title: "Green Future Starts with Action",
+      hero_desc: "We promote sustainability, circular economy and biodiversity protection.",
+      vision_title: "Our Vision",
+      vision_desc: "A low-carbon world where humanity lives in harmony with nature.",
+      sustain_title: "Sustainable Development",
+      sustain_desc: "Meeting today’s needs without compromising future generations.",
+      sustain_1: "Clean energy and efficiency",
+      sustain_2: "Green cities and infrastructure",
+      sustain_3: "Corporate ESG responsibility",
+      recycle_title: "Circular Economy",
+      recycle_desc: "Redesign production and consumption systems.",
+      recycle_1: "Reduce single-use plastics",
+      recycle_2: "E-waste recycling",
+      recycle_3: "Sustainable packaging",
+      bio_title: "Biodiversity Protection",
+      bio_desc: "Protecting ecosystems protects humanity.",
+      bio_1: "Protect forests, wetlands and oceans",
+      bio_2: "Stop illegal wildlife trade",
+      bio_3: "Support ecological restoration",
+      action_title: "Take Action",
+      action_desc: "Environmental protection starts with daily choices.",
+      action_1: "Low-carbon lifestyle",
+      action_2: "Reduce and reuse",
+      action_3: "Support green initiatives"
+    }
+  };
+
+  function setLang(lang) {
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      if (i18n[lang][key]) el.innerText = i18n[lang][key];
+    });
+    localStorage.setItem("lang", lang);
+  }
+
+  setLang(localStorage.getItem("lang") || "zh");
+</script>
+
+</body>
+</html>
