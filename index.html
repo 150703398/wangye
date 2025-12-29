@@ -1,194 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Green Network · Sustainable Future</title>
-
-  <meta name="description" content="Promoting environmental protection, sustainability, and climate action through awareness, innovation, and community engagement." />
-
-  <style>
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #f5f7f6;
-      color: #1f2937;
-      line-height: 1.7;
-    }
-
-    header {
-      background: linear-gradient(120deg, #1b5e20, #2e7d32);
-      color: #fff;
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    header p {
-      max-width: 700px;
-      margin: 20px auto 0;
-      font-size: 1.1rem;
-      opacity: 0.95;
-    }
-
-    nav {
-      background: #ffffff;
-      box-shadow: 0 2px 6px rgba(0,0,0,.05);
-      padding: 12px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    nav button {
-      background: #2e7d32;
-      color: #fff;
-      border: none;
-      padding: 8px 14px;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: #1b5e20;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 24px;
-    }
-
-    .card {
-      background: #fff;
-      padding: 24px;
-      border-radius: 12px;
-      box-shadow: 0 4px 14px rgba(0,0,0,.06);
-    }
-
-    footer {
-      background: #1b5e20;
-      color: #fff;
-      text-align: center;
-      padding: 30px 20px;
-      margin-top: 40px;
-      font-size: 0.9rem;
-    }
-  </style>
-</head>
-
-<body>
-
-<nav>
-  <strong>🌍 Green Network</strong>
-  <button onclick="toggleLang()">中文 / EN</button>
-</nav>
-
-<header>
-  <h1 data-en="Building a Sustainable Future Together"
-      data-zh="携手共建可持续的未来"></h1>
-  <p data-en="We promote environmental awareness, climate action, and sustainable development for a healthier planet."
-     data-zh="我们致力于推动环保意识、气候行动与可持续发展，共同守护地球未来。"></p>
-</header>
-
-<section>
-  <h2 data-en="Global Environmental Challenges"
-      data-zh="全球环境挑战"></h2>
-
-  <div class="grid">
-    <div class="card" data-en="Climate change is accelerating extreme weather, rising sea levels, and ecosystem instability."
-         data-zh="气候变化正在加剧极端天气、海平面上升以及生态系统失衡。"></div>
-
-    <div class="card" data-en="Plastic pollution threatens marine life and enters the human food chain."
-         data-zh="塑料污染正威胁海洋生物，并逐渐进入人类食物链。"></div>
-
-    <div class="card" data-en="Biodiversity loss weakens ecosystems that humans depend on for survival."
-         data-zh="生物多样性丧失削弱了人类赖以生存的生态系统。"></div>
-
-    <div class="card" data-en="Air and water pollution affect public health and economic sustainability."
-         data-zh="空气与水污染正在影响公共健康与经济可持续性。"></div>
-  </div>
+<!-- ================== 可持续发展 ================== -->
+<section class="section">
+  <h2 data-i18n="sustain_title">可持续发展行动</h2>
+  <p data-i18n="sustain_desc">
+    可持续发展不仅是减少破坏，更是建立人与自然长期共生的系统。
+    我们关注能源、城市、产业与个人行为的系统性改变，推动低碳、透明、可复制的环保实践。
+  </p>
+  <ul class="list">
+    <li data-i18n="sustain_1">推广清洁能源与能源效率提升</li>
+    <li data-i18n="sustain_2">支持低碳城市与绿色建筑</li>
+    <li data-i18n="sustain_3">倡导企业 ESG 与环境责任</li>
+  </ul>
 </section>
 
-<section>
-  <h2 data-en="Sustainable Solutions"
-      data-zh="可持续解决方案"></h2>
-
-  <div class="grid">
-    <div class="card" data-en="Renewable energy such as solar and wind reduces carbon emissions."
-         data-zh="太阳能、风能等可再生能源可有效减少碳排放。"></div>
-
-    <div class="card" data-en="Circular economy minimizes waste through reuse and recycling."
-         data-zh="循环经济通过再利用和回收减少资源浪费。"></div>
-
-    <div class="card" data-en="Green transportation lowers emissions and improves urban air quality."
-         data-zh="绿色交通降低排放并改善城市空气质量。"></div>
-
-    <div class="card" data-en="Eco-friendly buildings save energy and reduce environmental impact."
-         data-zh="绿色建筑节能高效，减少对环境的影响。"></div>
-  </div>
+<!-- ================== 循环经济 ================== -->
+<section class="section alt">
+  <h2 data-i18n="recycle_title">循环经济与资源再生</h2>
+  <p data-i18n="recycle_desc">
+    循环经济的核心不是“回收”，而是从设计阶段就减少浪费。
+    通过材料再生、产品延寿和共享机制，让资源在系统中持续流动。
+  </p>
+  <ul class="list">
+    <li data-i18n="recycle_1">减少一次性塑料与不可降解材料</li>
+    <li data-i18n="recycle_2">推动电子废弃物规范回收</li>
+    <li data-i18n="recycle_3">支持再生材料与可持续包装</li>
+  </ul>
 </section>
 
-<section>
-  <h2 data-en="What Individuals Can Do"
-      data-zh="个人可以做什么"></h2>
-
-  <div class="grid">
-    <div class="card" data-en="Reduce energy consumption and choose efficient appliances."
-         data-zh="减少能源消耗，选择高能效电器。"></div>
-
-    <div class="card" data-en="Adopt low-carbon transportation like cycling or public transit."
-         data-zh="选择骑行或公共交通等低碳出行方式。"></div>
-
-    <div class="card" data-en="Reduce waste and avoid single-use plastics."
-         data-zh="减少垃圾产生，避免一次性塑料制品。"></div>
-
-    <div class="card" data-en="Support environmentally responsible brands."
-         data-zh="支持具有环保责任的品牌和企业。"></div>
-  </div>
+<!-- ================== 生物多样性 ================== -->
+<section class="section">
+  <h2 data-i18n="bio_title">生物多样性保护</h2>
+  <p data-i18n="bio_desc">
+    生物多样性是地球生命系统稳定的基础。
+    保护森林、湿地、海洋与野生动物，就是在保护人类自身的未来。
+  </p>
+  <ul class="list">
+    <li data-i18n="bio_1">反对非法捕猎与栖息地破坏</li>
+    <li data-i18n="bio_2">支持自然保护区与生态修复</li>
+    <li data-i18n="bio_3">倡导与自然共存的生活方式</li>
+  </ul>
 </section>
 
-<section>
-  <h2 data-en="Take Action Now"
-      data-zh="立即行动"></h2>
-
-  <p data-en="Every action counts. Together, we can create a cleaner, safer, and more sustainable world."
-     data-zh="每一个行动都至关重要，让我们共同创造一个更清洁、更安全、更可持续的世界。"></p>
+<!-- ================== 行动号召 ================== -->
+<section class="section alt">
+  <h2 data-i18n="action_title">我们能做什么</h2>
+  <p data-i18n="action_desc">
+    环保不是少数人的使命，而是每个人都能参与的日常选择。
+    从今天开始，用行动推动改变。
+  </p>
+  <ul class="list">
+    <li data-i18n="action_1">选择节能产品与公共交通</li>
+    <li data-i18n="action_2">减少浪费，重复使用与回收</li>
+    <li data-i18n="action_3">支持环保组织与公益项目</li>
+  </ul>
 </section>
-
-<footer>
-  © 2025 Green Network · Sustainable Future
-</footer>
-
-<script>
-  let lang = localStorage.getItem("lang") || "en";
-
-  function applyLang() {
-    document.querySelectorAll("[data-en]").forEach(el => {
-      el.innerText = el.dataset[lang];
-    });
-  }
-
-  function toggleLang() {
-    lang = lang === "en" ? "zh" : "en";
-    localStorage.setItem("lang", lang);
-    applyLang();
-  }
-
-  applyLang();
-</script>
-
-</body>
-</html>
